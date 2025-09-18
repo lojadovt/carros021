@@ -81,6 +81,31 @@
             <p>&copy; 2025 Sua  Garagem 021. Todos os direitos reservados.</p>
         </div>
     </footer>
+<script>
+    // Função para expandir a imagem ao clicar
+    function expandImage(element) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("expandedImg");
 
+        modal.style.display = "block";
+        modalImg.src = element.src;
+        modalImg.alt = element.alt; // Define o alt da imagem expandida
+    }
+
+    // Função para fechar o modal
+    var modal = document.getElementById("imageModal");
+    var span = document.getElementsByClassName("close-btn")[0];
+
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    // Fecha o modal se o usuário clicar fora da imagem
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
