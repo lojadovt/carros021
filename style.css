@@ -119,3 +119,26 @@ footer {
     padding: 20px 0;
     font-size: 0.9em;
 }
+/* Estilos para a galeria de fotos adicionais do carro */
+.galeria-fotos-carro {
+    display: flex; /* Para que as fotos fiquem lado a lado */
+    justify-content: center; /* Centraliza as fotos */
+    flex-wrap: wrap; /* Quebra linha se não couber tudo em uma linha */
+    gap: 10px; /* Espaçamento entre as miniaturas */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.galeria-fotos-carro .foto-miniatura {
+    width: 80px; /* Largura das miniaturas */
+    height: 80px; /* Altura das miniaturas */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer; /* Indica que são clicáveis (se você quiser adicionar funcionalidade depois) */
+    transition: transform 0.2s ease-in-out;
+}
+
+.galeria-fotos-carro .foto-miniatura:hover {
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+}
