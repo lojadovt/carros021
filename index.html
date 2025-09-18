@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div id="imageModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="expandedImg">
+</div>
     <header>
         <div class="container">
             <h1>GARAGEM 021</h1>
@@ -34,9 +37,9 @@
     <img src="images/carro1.jpg" alt="Carro Esportivo Vermelho">
     
     <div class="galeria-fotos-carro">
-        <img src="carros1.jpg" alt="Interior do Carro Esportivo" class="foto-miniatura">
-        <img src="carros2.jpeg" alt="Traseira do Carro Esportivo" class="foto-miniatura">
-        <img src="carros1.jpg" alt="Motor do Carro Esportivo" class="foto-miniatura">
+        <img src="carros1.jpg" alt="Interior do Carro Esportivo" class="foto-miniatura" onclick="expandImage(this)">>
+        <img src="carros2.jpeg" alt="Traseira do Carro Esportivo" class="foto-miniatura" onclick="expandImage(this)">>
+        <img src="carros1.jpg" alt="Motor do Carro Esportivo" class="foto-miniatura" onclick="expandImage(this)">>
     </div>
 
     <h3>Carro Esportivo Red - Ano 2022</h3>
